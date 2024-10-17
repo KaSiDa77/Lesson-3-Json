@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <script>
+let myPromise=new Promise (function(myResolve,myReject){
+var x=99
+var a=x*5
+if(a==495){
+    myResolve("success")
+}
+else{
+    myReject("error")
+}
+})
+myPromise.then(
+    function(value){document.write("success");},
+    function(error){document.write("error");}
+)
+
+    </script>
+</body>
+</html>
